@@ -1,1 +1,3 @@
-const VORTEX_DOWNLOAD_URL = "www.mediafire.com/file/5m1asla6kw54ojy/Vortex.exe/file";
+{
+  "downloadUrl": "https://www.mediafire.com/file/5m1asla6kw54ojy/Vortex.exe/file"
+}
