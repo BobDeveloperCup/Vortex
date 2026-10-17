@@ -24,4 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
+
+    // Configura o link de download a partir do Version.js
+    const downloadBtn = document.getElementById('download-btn');
+    if (downloadBtn && typeof VORTEX_DOWNLOAD_URL !== 'undefined') {
+        downloadBtn.href = VORTEX_DOWNLOAD_URL;
+    }
 });
