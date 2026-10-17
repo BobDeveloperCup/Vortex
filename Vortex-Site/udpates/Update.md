@@ -2,3 +2,8 @@
 ![Banner](https://link-da-sua-imagem.png)
 - Correção de bugs no sistema de login.
 - Melhoria na estabilidade geral.
+.button = https://discord.gg/FzuvaRmXmN (Entrar no Discord)
+.button = https://github.com/BobDeveloperCup/Vortex (Ver Código Fonte)
+```<FollowUp>
+<prompt>Deseja ajustar a cor, animação ou estilo visual dos botões do anúncio para combinar ainda mais com os demais elementos do Vortex?</prompt>
+</FollowUp>
