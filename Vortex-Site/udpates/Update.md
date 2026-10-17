@@ -4,4 +4,3 @@
 - Melhoria na estabilidade geral.
 .button = https://discord.gg/FzuvaRmXmN (Entrar no Discord)
 .button = https://github.com/BobDeveloperCup/Vortex (Ver Código Fonte)
-```<FollowUp>
