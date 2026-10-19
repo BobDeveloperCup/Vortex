@@ -1,3 +1,12 @@
+# Teste!
+.icon = https://raw.githubusercontent.com/BobDeveloperCup/Vortex/main/Assets/Logo.png
+.banner = https://raw.githubusercontent.com/BobDeveloperCup/Vortex/main/Assets/Background.png
+- Esta é a primeira linha da notificação.
+- Atualização e otimização geral de código.
+.separator
+- Clique abaixo para acessar a comunidade oficial do Vortex no Discord!
+.button = https://discord.gg/FzuvaRmXmN (Entrar no Discord)
+
 # 🚀 Futura atualização!
 
 - Auto Gabarito: funcionalidade em desenvolvimento.
