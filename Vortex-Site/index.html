@@ -9,99 +9,118 @@
 </head>
 <body>
     <div id="app">
-        <main id="login-view" class="view active" style="flex-direction: column; justify-content: flex-start; padding-top: 40px;">
-            <header class="main-header login-card" style="max-width: 880px; margin-bottom: 24px; padding: 16px 28px; display: flex; justify-content: center; align-items: center; position: relative;">
-                <div style="display: flex; align-items: center; gap: 14px; position: absolute; left: 28px;">
-                    <img src="Assets/Logo_2.png" alt="Logo Vortex" class="logo" style="width: 44px; margin-bottom: 0;">
-                    <div>
-                        <h1 style="font-size: 18px; color: #ffffff;">Vortex</h1>
-                        <p class="subtitle" style="font-size: 10px;">Sala Do Futuro External</p>
-                    </div>
-                </div>
-                <nav class="nav-links" style="display: flex; gap: 10px;">
-                    <button type="button" class="nav-btn active" data-target="home-page">Início</button>
-                    <button type="button" class="nav-btn" data-target="como-funciona-page">Como Funciona</button>
-                    <button type="button" class="nav-btn" data-target="recursos-page">Recursos</button>
-                    <button type="button" class="nav-btn" data-target="download-page">Download</button>
-                </nav>
-            </header>
-
-            <div class="login-wrapper" style="max-width: 880px;">
-                <div id="home-page" class="page-content login-card active" style="max-width: 100%; padding: 40px;">
-                    <header class="login-header" style="text-align: left; margin-bottom: 20px;">
-                        <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 4px 10px; border-radius: 20px;">Plataforma Externa</span>
-                        <h2 style="color: #ffffff; font-size: 28px; margin-top: 12px;">Produtividade e Automação</h2>
-                    </header>
-                    <p style="color: var(--text-muted); font-size: 15px; line-height: 1.6; margin-bottom: 30px;">
-                        O Vortex é uma aplicação voltada para a gestão de acessos e automação de rotinas na plataforma Sala do Futuro, centralizando contas e agilizando tarefas cotidianas.
-                    </p>
-                    <button type="button" class="nav-btn" data-target="download-page" style="width: 100%; max-width: 220px; background: #ffffff; color: #0a0a0c; font-weight: 700; border: none; padding: 14px; text-align: center; border-radius: 10px; cursor: pointer; transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);">Acessar Downloads</button>
-                </div>
-
-                <div id="como-funciona-page" class="page-content login-card" style="max-width: 100%; padding: 40px;">
-                    <header class="login-header" style="text-align: left; margin-bottom: 24px;">
-                        <h2 style="color: #ffffff; font-size: 22px;">Funcionamento</h2>
-                    </header>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px;">
-                        <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.06); padding: 20px; border-radius: 12px;">
-                            <span style="font-size: 12px; font-weight: 800; color: var(--text-muted);">01</span>
-                            <h4 style="font-size: 15px; color: #ffffff; margin: 8px 0 6px 0;">Múltiplas Contas</h4>
-                            <p style="color: var(--text-muted); font-size: 13px; line-height: 1.5;">Gerencie e alterne entre diferentes perfis de acesso sem precisar reinserir credenciais a cada login.</p>
-                        </div>
-                        <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.06); padding: 20px; border-radius: 12px;">
-                            <span style="font-size: 12px; font-weight: 800; color: var(--text-muted);">02</span>
-                            <h4 style="font-size: 15px; color: #ffffff; margin: 8px 0 6px 0;">Ocultação de RA</h4>
-                            <p style="color: var(--text-muted); font-size: 13px; line-height: 1.5;">Dispõe de uma opção integrada para ocultar o RA nas contas conectadas, garantindo privacidade visual.</p>
-                        </div>
-                        <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.06); padding: 20px; border-radius: 12px;">
-                            <span style="font-size: 12px; font-weight: 800; color: var(--text-muted);">03</span>
-                            <h4 style="font-size: 15px; color: #ffffff; margin: 8px 0 6px 0;">Automação Direta</h4>
-                            <p style="color: var(--text-muted); font-size: 13px; line-height: 1.5;">Ferramentas desenvolvidas para execução eficiente de fluxos e preenchimentos na plataforma.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="recursos-page" class="page-content login-card" style="max-width: 100%; padding: 40px;">
-                    <header class="login-header" style="text-align: left; margin-bottom: 24px;">
-                        <h2 style="color: #ffffff; font-size: 22px;">Recursos</h2>
-                    </header>
-                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px;">
-                        <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.06); padding: 22px; border-radius: 12px;">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #ffffff; margin-bottom: 12px;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-                            <h4 style="font-size: 16px; color: #ffffff; margin-bottom: 6px;">Unlocker</h4>
-                            <p style="color: var(--text-muted); font-size: 13px; line-height: 1.5;">Remove restrições de interação para permitir a cópia e manipulação de textos com facilidade.</p>
-                        </div>
-                        <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.06); padding: 22px; border-radius: 12px;">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #ffffff; margin-bottom: 12px;"><polyline points="4 7 4 4 20 4 20 7"></polyline><line x1="9" y1="20" x2="15" y2="20"></line><line x1="12" y1="4" x2="12" y2="20"></line></svg>
-                            <h4 style="font-size: 16px; color: #ffffff; margin-bottom: 6px;">Vortex Type</h4>
-                            <p style="color: var(--text-muted); font-size: 13px; line-height: 1.5;">Realiza o preenchimento automático de campos de texto nos modos instantâneo ou simulado.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="download-page" class="page-content login-card" style="max-width: 100%; padding: 40px;">
-                    <header class="login-header" style="text-align: left; margin-bottom: 24px;">
-                        <h2 style="color: #ffffff; font-size: 22px;">Download</h2>
-                    </header>
-                    <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 20px;">
-                        Baixe a versão mais recente do instalador.
-                    </p>
-                    <div style="display: flex; justify-content: space-between; align-items: center; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); padding: 20px 24px; border-radius: 12px;">
-                        <div>
-                            <h4 style="font-size: 16px; color: #ffffff; font-weight: 700;">Vortex.exe</h4>
-                        </div>
-                        <div>
-                            <a id="download-btn" href="#" target="_blank" style="background: #ffffff; color: #0a0a0c; font-weight: 700; text-decoration: none; display: inline-block; padding: 12px 24px; border-radius: 10px; transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);">Baixar</a>
-                        </div>
-                    </div>
+        <!-- Header Fixo -->
+        <header class="main-header login-card">
+            <div class="brand-container">
+                <img src="Assets/Logo_2.png" alt="Logo Vortex" class="logo">
+                <div class="brand-text">
+                    <h1>Vortex</h1>
+                    <p class="subtitle">Sala Do Futuro External</p>
                 </div>
             </div>
 
-            <div class="bottom-left-actions">
-                <a href="https://discord.gg/FzuvaRmXmN" target="_blank" id="btn-discord" class="action-icon-btn discord-btn" title="Discord">
+            <nav class="nav-links" aria-label="Navegação Principal">
+                <button type="button" class="nav-btn active" data-target="home-page">Início</button>
+                <button type="button" class="nav-btn" data-target="como-funciona-page">Como Funciona</button>
+                <button type="button" class="nav-btn" data-target="recursos-page">Recursos</button>
+                <button type="button" class="nav-btn" data-target="download-page">Download</button>
+            </nav>
+
+            <div class="header-actions">
+                <a href="https://discord.gg/FzuvaRmXmN" target="_blank" id="btn-discord" class="discord-header-btn" title="Comunidade Discord">
                     <img src="Assets/Discord_Icon.png" alt="Discord" class="discord-img">
+                    <span>Discord</span>
                 </a>
             </div>
+        </header>
+
+        <!-- Conteúdo Principal -->
+        <main class="content-wrapper">
+            <!-- Seção Início -->
+            <section id="home-page" class="page-content login-card active">
+                <header class="login-header">
+                    <span class="badge">Plataforma Externa</span>
+                    <h2>Gerenciamento e Automação</h2>
+                </header>
+                <p class="section-desc">
+                    Ferramenta criada para auxiliar no gerenciamento de acessos e automação de rotinas no ecossistema Sala do Futuro.
+                </p>
+                <button type="button" class="nav-btn cta-btn" data-target="download-page">Ir para Download</button>
+            </section>
+
+            <!-- Seção Como Funciona -->
+            <section id="como-funciona-page" class="page-content login-card">
+                <header class="login-header">
+                    <h2>Funcionamento</h2>
+                </header>
+                <div class="grid-steps">
+                    <div class="feature-card">
+                        <span class="step-number">01</span>
+                        <h4>Múltiplas Contas</h4>
+                        <p>Alterne entre perfis de forma simples sem precisar relogar a cada acesso.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="step-number">02</span>
+                        <h4>Privacidade Visual</h4>
+                        <p>Ocultação opcional do RA para maior privacidade durante o uso.</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="step-number">03</span>
+                        <h4>Automação</h4>
+                        <p>Execução direta de etapas e fluxos na plataforma.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção Recursos -->
+            <section id="recursos-page" class="page-content login-card">
+                <header class="login-header">
+                    <h2>Recursos</h2>
+                </header>
+                <div class="grid-resources">
+                    <div class="feature-card resource-item">
+                        <div class="icon-box">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                        </div>
+                        <h4>Unlocker</h4>
+                        <p>Facilita a seleção e cópia de textos bloqueados na interface.</p>
+                    </div>
+                    <div class="feature-card resource-item">
+                        <div class="icon-box">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 7 4 4 20 4 20 7"></polyline><line x1="9" y1="20" x2="15" y2="20"></line><line x1="12" y1="4" x2="12" y2="20"></line></svg>
+                        </div>
+                        <h4>Vortex Type</h4>
+                        <p>Preenchimento automático de campos de texto com velocidade ajustável.</p>
+                    </div>
+                    <div class="feature-card resource-item status-card">
+                        <div class="icon-box warning">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                        </div>
+                        <div class="title-with-tag">
+                            <h4>AutoGabarito</h4>
+                            <span class="status-badge">Em Manutenção</span>
+                        </div>
+                        <p>Recurso temporariamente indisponível. Estamos aplicando melhorias de desempenho e estabilidade.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção Download -->
+            <section id="download-page" class="page-content login-card">
+                <header class="login-header">
+                    <h2>Download</h2>
+                </header>
+                <p class="section-desc">
+                    Obtenha a versão mais recente do aplicativo.
+                </p>
+                <div class="download-box">
+                    <div class="download-info">
+                        <h4>Vortex.exe</h4>
+                        <span class="file-meta">Versão para Windows</span>
+                    </div>
+                    <a id="download-btn" href="#" target="_blank" class="primary-download-btn">Baixar</a>
+                </div>
+            </section>
         </main>
     </div>
 
