@@ -1,141 +1,274 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vortex — Sala do Futuro</title>
-<link rel="icon" href="Assets/Logo.png" type="image/png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vortex — Sala do Futuro</title>
+    <link rel="icon" href="Assets/Logo.png" type="image/png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-user" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol><symbol id="i-x" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol><symbol id="i-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></symbol><symbol id="i-eye" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></symbol><symbol id="i-eye-off" viewBox="0 0 24 24"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></symbol><symbol id="i-plus" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></symbol><symbol id="i-palette" viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></symbol><symbol id="i-news" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></symbol><symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></symbol><symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol><symbol id="i-refresh" viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></symbol><symbol id="i-log-in" viewBox="0 0 24 24"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></symbol><symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol><symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></symbol><symbol id="i-sliders" viewBox="0 0 24 24"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></symbol><symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol><symbol id="i-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></symbol><symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></symbol><symbol id="i-discord" viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.927 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></symbol></svg>
-<div id="vortex-bg-container">
-    <div id="vortex-bg-overlay"></div>
-    <img id="vortex-bg-image" class="vortex-bg-media" alt="">
-    <video id="vortex-bg-video" class="vortex-bg-media" autoplay loop muted playsinline></video>
-</div>
 
-<div id="app">
-<main id="login-view" class="view active">
-    <div class="login-wrapper">
-        <section class="login-card" aria-labelledby="login-title">
-            <header class="brand">
-                <img src="Assets/Logo.png" alt="" class="logo">
-                <div><h1 id="login-title">Vortex</h1><p class="subtitle">v1.0.4 External</p></div>
-            </header>
-            <form id="login-form">
-<div class="input-row">
-<div class="input-group ra-group"><label for="ra">RA</label><input class="field" type="text" id="ra" autocomplete="off" inputmode="numeric" maxlength="12" required></div>
-<div class="input-group digit-group"><label for="digito">Dígito</label><input class="field" type="text" id="digito" maxlength="2" autocomplete="off" inputmode="numeric" required></div>
-<div class="input-group uf-group"><label for="uf">UF</label><select class="field" id="uf" required></select></div>
-</div>
-<div class="input-group"><label for="senha">Senha</label><div class="password-wrapper"><input class="field" type="password" id="senha" autocomplete="off" required>
-<button type="button" id="toggle-password" class="eye-btn" title="Mostrar/ocultar senha" aria-label="Mostrar ou ocultar senha"><svg class="i " aria-hidden="true"><use href="#i-eye"/></svg></button></div></div>
-                <button type="submit" id="btn-submit" class="btn-login">Entrar</button>
-            </form>
-        </section>
+    <canvas id="ambient-canvas"></canvas>
+    <div class="grid-overlay"></div>
 
-        <section id="accounts-card" class="login-card accounts-card" aria-labelledby="accounts-title">
-            <div class="accounts-header"><h2 id="accounts-title">Contas conectadas</h2></div>
-            <div id="accounts-list" class="accounts-list"></div>
-            <button type="button" id="btn-open-modal" class="btn-add-account"><svg class="i " aria-hidden="true"><use href="#i-plus"/></svg>Adicionar conta</button>
-        </section>
-    </div>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="site-header">
+            <a href="#inicio" class="brand-group">
+                <img src="Assets/Logo.png" alt="Vortex Logo" class="brand-logo">
+                <span class="brand-name">Vortex</span>
+                <span class="brand-badge">v1.0.4</span>
+            </a>
 
-    <div id="add-modal" class="modal-overlay">
-        <div class="login-card modal-card" role="dialog" aria-modal="true" aria-labelledby="add-title">
-            <header class="modal-head"><h2 id="add-title">Nova conta</h2></header>
-            <form id="add-form">
-<div class="input-row">
-<div class="input-group ra-group"><label for="add-ra">RA</label><input class="field" type="text" id="add-ra" autocomplete="off" inputmode="numeric" maxlength="12" required data-focus></div>
-<div class="input-group digit-group"><label for="add-digito">Dígito</label><input class="field" type="text" id="add-digito" maxlength="2" autocomplete="off" inputmode="numeric" required></div>
-<div class="input-group uf-group"><label for="add-uf">UF</label><select class="field" id="add-uf" required></select></div>
-</div>
-<div class="input-group"><label for="add-senha">Senha</label><div class="password-wrapper"><input class="field" type="password" id="add-senha" autocomplete="off" required>
-<button type="button" id="add-toggle-password" class="eye-btn" title="Mostrar/ocultar senha" aria-label="Mostrar ou ocultar senha"><svg class="i " aria-hidden="true"><use href="#i-eye"/></svg></button></div></div>
-                <div class="modal-actions">
-                    <button type="button" id="btn-close-modal" class="btn-cancel">Cancelar</button>
-                    <button type="submit" id="btn-add-submit" class="btn-login">Salvar conta</button>
+            <nav class="nav-menu">
+                <a href="#inicio" class="nav-item">Início</a>
+                <a href="#recursos" class="nav-item">Recursos</a>
+                <a href="#como-funciona" class="nav-item">Como Funciona</a>
+                <a href="#termos" class="nav-item">Termos</a>
+                <a href="#download" class="nav-item">Download</a>
+            </nav>
+
+            <div class="header-actions">
+                <div class="status-pill">
+                    <span class="status-dot"></span>
+                    <span>Disponível</span>
                 </div>
-            </form>
-        </div>
-    </div>
-
-    <div id="settings-modal" class="modal-overlay">
-        <div class="login-card modal-card settings-card" role="dialog" aria-modal="true" aria-labelledby="settings-title">
-            <header class="modal-head row">
-                <h2 id="settings-title">Configurações</h2>
-                <button type="button" id="btn-close-settings" class="icon-btn" title="Fechar (Esc)" aria-label="Fechar"><svg class="i " aria-hidden="true"><use href="#i-x"/></svg></button>
-            </header>
-            <div class="settings-tabs" role="tablist">
-                <button type="button" class="tab-btn active" role="tab" aria-selected="true" data-tab="tab-config" data-focus><svg class="i " aria-hidden="true"><use href="#i-sliders"/></svg>Geral</button>
-                <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="tab-visual"><svg class="i " aria-hidden="true"><use href="#i-palette"/></svg>Aparência</button>
-                <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="tab-guide"><svg class="i " aria-hidden="true"><use href="#i-book"/></svg>Manual</button>
-                <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="tab-news"><svg class="i " aria-hidden="true"><use href="#i-news"/></svg>Novidades</button>
+                <a href="https://discord.gg/FzuvaRmXmN" target="_blank" class="btn-discord">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.927 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+                    <span>Comunidade</span>
+                </a>
             </div>
-            <div class="settings-body">
-                <div id="tab-config" class="tab-pane active" role="tabpanel">
-                    <section class="settings-section"><h3>Privacidade</h3>
-                        <div class="setting-item"><div class="setting-info"><span class="setting-label">Ocultar RA nas contas</span><span class="setting-desc">Troca o RA real por “Conta 1”, “Conta 2”…</span></div><label class="toggle-switch"><input type="checkbox" id="toggle-hide-ra" aria-label="Ocultar RA nas contas"><span class="slider"></span></label></div>
-                    </section>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <h1 class="hero-title">Sua rotina na Sala do Futuro mais simples e rápida</h1>
+            <p class="hero-subtitle">Uma ferramenta prática para facilitar o seu dia a dia e economizar tempo na plataforma.</p>
+
+            <div class="hero-buttons">
+                <a href="#download" class="btn-primary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    <span>Baixar para Windows</span>
+                </a>
+                <a href="#recursos" class="btn-secondary">
+                    <span>Conhecer Recursos</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Painel de Demonstração -->
+        <div class="showcase-container">
+            <div class="window-header">
+                <div class="window-dots">
+                    <div class="dot dot-gray"></div>
+                    <div class="dot dot-gray"></div>
+                    <div class="dot dot-gray"></div>
                 </div>
-                <div id="tab-visual" class="tab-pane" role="tabpanel">
-                    <section class="settings-section"><h3>Cores</h3>
-                        <div class="setting-item"><div class="setting-info"><span class="setting-label">Cor de destaque</span><span class="setting-desc">Foco, realces e seleção.</span></div><input type="color" id="custom-accent-color" class="color-input" value="#ffffff"></div>
-                        <div class="setting-item"><div class="setting-info"><span class="setting-label">Cor cinza principal</span><span class="setting-desc">Superfície dos cartões e janelas.</span></div><input type="color" id="custom-gray-color" class="color-input" value="#121212"></div>
-                        <div class="setting-item"><div class="setting-info"><span class="setting-label">Cor dos textos</span><span class="setting-desc">Texto principal e títulos.</span></div><input type="color" id="custom-text-color" class="color-input" value="#f0f0f0"></div>
-                        <div class="setting-item"><div class="setting-info"><span class="setting-label">Cor dos botões</span><span class="setting-desc">Fundo dos botões de ação.</span></div><input type="color" id="custom-btn-color" class="color-input" value="#1f1f1f"></div>
-                        <div class="setting-item"><div class="setting-info"><span class="setting-label">Cor das bordas</span><span class="setting-desc">Bordas de cartões e campos.</span></div><input type="color" id="custom-border-color" class="color-input" value="#333333"></div>
-                    </section>
-                    <section class="settings-section"><h3>Plano de fundo</h3>
-                        <div class="setting-item"><div class="setting-info"><span class="setting-label">Tipo de fundo</span><span class="setting-desc">Escolha como estilizar o fundo.</span></div><select id="bg-type-select" class="field theme-select"><option value="default">Padrão</option><option value="color">Cor sólida</option><option value="media">Imagem, GIF ou MP4</option></select></div>
-                        <div id="bg-solid-group" class="setting-item" hidden><div class="setting-info"><span class="setting-label">Cor de fundo</span><span class="setting-desc">Cor sólida aplicada ao fundo.</span></div><input type="color" id="custom-bg-color" class="color-input" value="#080808"></div>
-                        <div id="bg-media-group" class="setting-item stack" hidden>
-                            <div class="setting-info"><span class="setting-label">Arquivo de mídia</span><span class="setting-desc">Imagem, GIF ou vídeo MP4 (até 25 MB).</span></div>
-                            <div class="btn-row">
-                                <input type="file" id="bg-file-input" accept="image/png, image/jpeg, image/gif, video/mp4" hidden>
-                                <button type="button" id="btn-select-bg" class="vortex-embed-btn grow"><svg class="i " aria-hidden="true"><use href="#i-image"/></svg>Escolher arquivo</button>
-                                <button type="button" id="btn-remove-bg" class="vortex-embed-btn btn-danger" hidden>Remover</button>
-                            </div>
-                            <div id="bg-preview-box" class="bg-preview-box" hidden><span class="bg-preview-title">Pré-visualização</span><div id="bg-preview-media-wrapper" class="bg-preview-media-wrapper"></div></div>
+                <span class="window-title">Vortex — Painel Principal</span>
+                <div style="width: 40px;"></div>
+            </div>
+
+            <div class="showcase-body">
+                <div class="showcase-sidebar">
+                    <button class="tab-btn active" data-tab="tab-type">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                        <span>Digitação Automática</span>
+                    </button>
+                    <button class="tab-btn" data-tab="tab-unlock">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                        <span>Seleção de Texto</span>
+                    </button>
+                    <button class="tab-btn" data-tab="tab-accounts">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        <span>Troca de Contas</span>
+                    </button>
+                </div>
+
+                <div class="showcase-view">
+                    <div id="tab-type" class="view-pane active">
+                        <div class="pane-header">
+                            <h3>Preenchimento de Texto</h3>
+                            <p>Preenche respostas de forma fluida com velocidade ajustável.</p>
                         </div>
-                    </section>
-                    <button type="button" id="btn-reset-defaults" class="vortex-embed-btn btn-danger full">Restaurar padrões</button>
-                </div>
-                <div id="tab-guide" class="tab-pane" role="tabpanel">
-                    <section class="settings-section"><h3>Instruções de uso</h3><div class="accordion"><div class="accordion-item"><button class="accordion-header" type="button" aria-expanded="false"><span class="accordion-title"><svg class="i " aria-hidden="true"><use href="#i-log-in"/></svg>Como entrar</span><svg class="i accordion-icon" aria-hidden="true"><use href="#i-chevron"/></svg></button><div class="accordion-content"><div class="acc-inner"><p>Informe RA, dígito, UF e senha e clique em Entrar. Se a autenticação falhar, o Vortex avisa e volta para esta tela.</p></div></div></div><div class="accordion-item"><button class="accordion-header" type="button" aria-expanded="false"><span class="accordion-title"><svg class="i " aria-hidden="true"><use href="#i-users"/></svg>Contas conectadas</span><svg class="i accordion-icon" aria-hidden="true"><use href="#i-chevron"/></svg></button><div class="accordion-content"><div class="acc-inner"><p>Use “Adicionar conta” para salvar um perfil. Depois, basta clicar nele na lista para entrar sem digitar a senha. O X remove a conta e apaga a senha salva.</p></div></div></div><div class="accordion-item"><button class="accordion-header" type="button" aria-expanded="false"><span class="accordion-title"><svg class="i " aria-hidden="true"><use href="#i-shield"/></svg>Privacidade e segurança</span><svg class="i accordion-icon" aria-hidden="true"><use href="#i-chevron"/></svg></button><div class="accordion-content"><div class="acc-inner"><p>Os dados ficam apenas neste computador. Quando o Windows permite, a senha é criptografada com a sua conta de usuário. Ative “Ocultar RA” para exibir “Conta 1”, “Conta 2”… ao gravar a tela.</p></div></div></div><div class="accordion-item"><button class="accordion-header" type="button" aria-expanded="false"><span class="accordion-title"><svg class="i " aria-hidden="true"><use href="#i-palette"/></svg>Personalização</span><svg class="i accordion-icon" aria-hidden="true"><use href="#i-chevron"/></svg></button><div class="accordion-content"><div class="acc-inner"><p>Na aba Aparência, ajuste cores e fundo (imagem, GIF ou MP4 de até 25 MB). “Restaurar padrões” volta tudo ao original.</p></div></div></div><div class="accordion-item"><button class="accordion-header" type="button" aria-expanded="false"><span class="accordion-title"><svg class="i " aria-hidden="true"><use href="#i-help"/></svg>Solução de problemas</span><svg class="i accordion-icon" aria-hidden="true"><use href="#i-chevron"/></svg></button><div class="accordion-content"><div class="acc-inner"><p>Sessão expirada? Remova a conta e adicione novamente. Conexão instável? Aguarde: o login tenta por até 90 segundos. Notícias não carregam? Verifique a internet e use “Atualizar”.</p></div></div></div><div class="accordion-item"><button class="accordion-header" type="button" aria-expanded="false"><span class="accordion-title"><svg class="i " aria-hidden="true"><use href="#i-settings"/></svg>Atalhos</span><svg class="i accordion-icon" aria-hidden="true"><use href="#i-chevron"/></svg></button><div class="accordion-content"><div class="acc-inner"><p>Esc fecha janelas abertas. Tab navega pelos campos e Enter confirma.</p></div></div></div></div></section>
-                </div>
-                <div id="tab-news" class="tab-pane" role="tabpanel">
-                    <div class="news-head"><h3>Atualizações recentes</h3><button type="button" id="btn-refresh-news" class="vortex-embed-btn"><svg class="i " aria-hidden="true"><use href="#i-refresh"/></svg><span>Atualizar</span></button></div>
-                    <div id="news-status-msg" class="news-status-msg" hidden></div>
-                    <div id="news-container" class="news-container"><p class="loading-news">Carregando notícias...</p></div>
+                        <div class="terminal-box">
+                            <div class="terminal-line"><span class="terminal-time">[14:32]</span><span>Iniciando preenchimento do texto...</span></div>
+                            <div class="terminal-line"><span class="terminal-time">[14:32]</span><span>Texto identificado no campo de resposta.</span></div>
+                            <div class="terminal-line"><span class="terminal-time">[14:32]</span><span>Concluído com sucesso.</span></div>
+                        </div>
+                    </div>
+
+                    <div id="tab-unlock" class="view-pane">
+                        <div class="pane-header">
+                            <h3>Leitura e Cópia</h3>
+                            <p>Permite selecionar e copiar textos das lições de forma direta.</p>
+                        </div>
+                        <div class="terminal-box">
+                            <div class="terminal-line"><span class="terminal-time">[14:30]</span><span>Liberando seleção de texto no documento...</span></div>
+                            <div class="terminal-line"><span class="terminal-time">[14:30]</span><span>Cópia liberada.</span></div>
+                        </div>
+                    </div>
+
+                    <div id="tab-accounts" class="view-pane">
+                        <div class="pane-header">
+                            <h3>Gerenciador de Perfis</h3>
+                            <p>Alterne entre diferentes contas com poucos cliques.</p>
+                        </div>
+                        <div class="terminal-box">
+                            <div class="terminal-line"><span class="terminal-time">[14:28]</span><span>Perfil principal conectado.</span></div>
+                            <div class="terminal-line"><span class="terminal-time">[14:28]</span><span>Dados protegidos na tela.</span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!-- Recursos -->
+        <section id="recursos">
+            <div class="section-header">
+                <span class="section-tag">Recursos</span>
+                <h2 class="section-title">O que o programa faz</h2>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div>
+                        <div class="card-top">
+                            <div class="card-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+                            </div>
+                            <span class="badge-status active">Funcionando</span>
+                        </div>
+                        <h3 class="card-title">Digitação Automática</h3>
+                        <p class="card-desc">Escreve o texto nos campos da lição de maneira natural, com velocidade ajustável.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div>
+                        <div class="card-top">
+                            <div class="card-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                            </div>
+                            <span class="badge-status active">Funcionando</span>
+                        </div>
+                        <h3 class="card-title">Seleção e Cópia Livre</h3>
+                        <p class="card-desc">Remove as restrições que impedem selecionar ou copiar textos das questões.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div>
+                        <div class="card-top">
+                            <div class="card-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                            <span class="badge-status active">Funcionando</span>
+                        </div>
+                        <h3 class="card-title">Gerenciador de Contas</h3>
+                        <p class="card-desc">Guarde suas contas e troque de perfil sem precisar redigitar dados.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div>
+                        <div class="card-top">
+                            <div class="card-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                            </div>
+                            <span class="badge-status warning">Em Atualização</span>
+                        </div>
+                        <h3 class="card-title">Apoio nas Respostas</h3>
+                        <p class="card-desc">Em ajustes temporários para acompanhar as atualizações da plataforma.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Como Funciona -->
+        <section id="como-funciona" class="workflow-section">
+            <div class="section-header">
+                <span class="section-tag">Passo a Passo</span>
+                <h2 class="section-title">Como usar</h2>
+            </div>
+
+            <div class="workflow-grid">
+                <div class="workflow-step">
+                    <div class="step-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    </div>
+                    <span class="step-num">Passo 01</span>
+                    <h3 class="step-title">Baixe o Programa</h3>
+                    <p class="step-desc">Faça o download do arquivo executável diretamente pelo site.</p>
+                </div>
+
+                <div class="workflow-step">
+                    <div class="step-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
+                    <span class="step-num">Passo 02</span>
+                    <h3 class="step-title">Abra no Windows</h3>
+                    <p class="step-desc">Dê dois cliques para abrir, sem necessidade de instalação complexa.</p>
+                </div>
+
+                <div class="workflow-step">
+                    <div class="step-icon">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    </div>
+                    <span class="step-num">Passo 03</span>
+                    <h3 class="step-title">Utilize</h3>
+                    <p class="step-desc">Ative as funções desejadas no painel e utilize na Sala do Futuro.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Termos de Uso -->
+        <section id="termos" class="terms-section">
+            <div class="section-header">
+                <span class="section-tag">Responsabilidade</span>
+                <h2 class="section-title">Termos de Uso</h2>
+            </div>
+            
+            <div class="terms-card">
+                <p>O uso do Vortex na plataforma Sala do Futuro é de total e exclusiva responsabilidade de quem o utiliza. Os desenvolvedores não se responsabilizam por eventuais punições, bloqueios de conta, advertências ou consequências decorrentes do uso de scripts ou ferramentas de automação na plataforma externa.</p>
+                <p>Ao baixar e executar o software, você concorda integralmente com estes termos e assume todos os riscos associados ao uso da aplicação.</p>
+            </div>
+        </section>
+
+        <!-- Download Banner -->
+        <section id="download" class="download-box">
+            <div class="download-info">
+                <h2>Baixar Vortex</h2>
+                <p>Aplicativo leve e compatível com Windows 10 e 11.</p>
+                <div class="download-meta">
+                    <span>• Sistema 64-bits</span>
+                    <span>• Windows 10 / 11</span>
+                </div>
+            </div>
+
+            <a id="download-btn" href="https://www.mediafire.com/file/5m1asla6kw54ojy/Vortex.exe/file" target="_blank" class="dl-btn-large">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span>Baixar Vortex.exe</span>
+            </a>
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-brand">
+                <img src="Assets/Logo.png" alt="Logo" style="width:20px; height:20px;">
+                <span>© Vortex — Todos os direitos reservados.</span>
+            </div>
+            <div>
+                <a href="https://discord.gg/FzuvaRmXmN" target="_blank" style="color:var(--text-secondary); text-decoration:none;">Discord</a>
+            </div>
+        </footer>
     </div>
 
-    <div id="loading-overlay" class="modal-overlay" role="alert" aria-live="assertive">
-        <div class="loading-card"><div class="spinner"></div><h2>Entrando...</h2><p>Aguarde um momento</p></div>
-    </div>
-
-    <div class="bottom-left-actions">
-        <button type="button" id="btn-settings" class="action-icon-btn" title="Configurações e ajuda" aria-label="Configurações e ajuda"><svg class="i " aria-hidden="true"><use href="#i-settings"/></svg></button>
-        <a href="https://discord.gg/FzuvaRmXmN" id="btn-discord" class="action-icon-btn discord-btn" title="Discord" aria-label="Discord"><svg class="i " aria-hidden="true"><use href="#i-discord"/></svg></a>
-    </div>
-
-    <div id="vortex-announcement-toast" class="announcement-toast" role="status">
-        <button type="button" id="btn-close-toast" class="toast-close-btn" title="Fechar" aria-label="Fechar"><svg class="i " aria-hidden="true"><use href="#i-x"/></svg></button>
-        <div id="toast-content" class="toast-content"></div>
-    </div>
-    <div id="toast-stack" class="toast-stack"></div>
-
-    <div class="decorative-gif-container" aria-hidden="true"><img src="Assets/white_replacement_full.gif" alt="" class="decorative-gif"></div>
-</main>
-</div>
-<script src="script.js"></script>
-<script src="login.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
