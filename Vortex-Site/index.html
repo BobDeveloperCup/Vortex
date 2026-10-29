@@ -1,130 +1,141 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vortex - Sala Do Futuro External</title>
-    <link rel="icon" href="Assets/Logo.png" type="image/png">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vortex — Sala do Futuro</title>
+<link rel="icon" href="Assets/Logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="app">
-        <!-- Header Fixo -->
-        <header class="main-header login-card">
-            <div class="brand-container">
-                <img src="Assets/Logo_2.png" alt="Logo Vortex" class="logo">
-                <div class="brand-text">
-                    <h1>Vortex</h1>
-                    <p class="subtitle">Sala Do Futuro External</p>
-                </div>
-            </div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-user" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol><symbol id="i-x" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol><symbol id="i-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></symbol><symbol id="i-eye" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></symbol><symbol id="i-eye-off" viewBox="0 0 24 24"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></symbol><symbol id="i-plus" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></symbol><symbol id="i-palette" viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></symbol><symbol id="i-news" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></symbol><symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></symbol><symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol><symbol id="i-refresh" viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></symbol><symbol id="i-log-in" viewBox="0 0 24 24"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></symbol><symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol><symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></symbol><symbol id="i-sliders" viewBox="0 0 24 24"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></symbol><symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol><symbol id="i-chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></symbol><symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></symbol><symbol id="i-discord" viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.927 1.793 8.18 1.793 12.061 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></symbol></svg>
+<div id="vortex-bg-container">
+    <div id="vortex-bg-overlay"></div>
+    <img id="vortex-bg-image" class="vortex-bg-media" alt="">
+    <video id="vortex-bg-video" class="vortex-bg-media" autoplay loop muted playsinline></video>
+</div>
 
-            <nav class="nav-links" aria-label="Navegação Principal">
-                <button type="button" class="nav-btn active" data-target="home-page">Início</button>
-                <button type="button" class="nav-btn" data-target="como-funciona-page">Como Funciona</button>
-                <button type="button" class="nav-btn" data-target="recursos-page">Recursos</button>
-                <button type="button" class="nav-btn" data-target="download-page">Download</button>
-            </nav>
+<div id="app">
+<main id="login-view" class="view active">
+    <div class="login-wrapper">
+        <section class="login-card" aria-labelledby="login-title">
+            <header class="brand">
+                <img src="Assets/Logo.png" alt="" class="logo">
+                <div><h1 id="login-title">Vortex</h1><p class="subtitle">v1.0.4 External</p></div>
+            </header>
+            <form id="login-form">
+<div class="input-row">
+<div class="input-group ra-group"><label for="ra">RA</label><input class="field" type="text" id="ra" autocomplete="off" inputmode="numeric" maxlength="12" required></div>
+<div class="input-group digit-group"><label for="digito">Dígito</label><input class="field" type="text" id="digito" maxlength="2" autocomplete="off" inputmode="numeric" required></div>
+<div class="input-group uf-group"><label for="uf">UF</label><select class="field" id="uf" required></select></div>
+</div>
+<div class="input-group"><label for="senha">Senha</label><div class="password-wrapper"><input class="field" type="password" id="senha" autocomplete="off" required>
+<button type="button" id="toggle-password" class="eye-btn" title="Mostrar/ocultar senha" aria-label="Mostrar ou ocultar senha"><svg class="i " aria-hidden="true"><use href="#i-eye"/></svg></button></div></div>
+                <button type="submit" id="btn-submit" class="btn-login">Entrar</button>
+            </form>
+        </section>
 
-            <div class="header-actions">
-                <a href="https://discord.gg/FzuvaRmXmN" target="_blank" id="btn-discord" class="discord-header-btn" title="Comunidade Discord">
-                    <img src="Assets/Discord_Icon.png" alt="Discord" class="discord-img">
-                    <span>Discord</span>
-                </a>
-            </div>
-        </header>
-
-        <!-- Conteúdo Principal -->
-        <main class="content-wrapper">
-            <!-- Seção Início -->
-            <section id="home-page" class="page-content login-card active">
-                <header class="login-header">
-                    <span class="badge">Plataforma Externa</span>
-                    <h2>Gerenciamento e Automação</h2>
-                </header>
-                <p class="section-desc">
-                    Ferramenta criada para auxiliar no gerenciamento de acessos e automação de rotinas no ecossistema Sala do Futuro.
-                </p>
-                <button type="button" class="nav-btn cta-btn" data-target="download-page">Ir para Download</button>
-            </section>
-
-            <!-- Seção Como Funciona -->
-            <section id="como-funciona-page" class="page-content login-card">
-                <header class="login-header">
-                    <h2>Funcionamento</h2>
-                </header>
-                <div class="grid-steps">
-                    <div class="feature-card">
-                        <span class="step-number">01</span>
-                        <h4>Múltiplas Contas</h4>
-                        <p>Alterne entre perfis de forma simples sem precisar relogar a cada acesso.</p>
-                    </div>
-                    <div class="feature-card">
-                        <span class="step-number">02</span>
-                        <h4>Privacidade Visual</h4>
-                        <p>Ocultação opcional do RA para maior privacidade durante o uso.</p>
-                    </div>
-                    <div class="feature-card">
-                        <span class="step-number">03</span>
-                        <h4>Automação</h4>
-                        <p>Execução direta de etapas e fluxos na plataforma.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Seção Recursos -->
-            <section id="recursos-page" class="page-content login-card">
-                <header class="login-header">
-                    <h2>Recursos</h2>
-                </header>
-                <div class="grid-resources">
-                    <div class="feature-card resource-item">
-                        <div class="icon-box">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-                        </div>
-                        <h4>Unlocker</h4>
-                        <p>Facilita a seleção e cópia de textos bloqueados na interface.</p>
-                    </div>
-                    <div class="feature-card resource-item">
-                        <div class="icon-box">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 7 4 4 20 4 20 7"></polyline><line x1="9" y1="20" x2="15" y2="20"></line><line x1="12" y1="4" x2="12" y2="20"></line></svg>
-                        </div>
-                        <h4>Vortex Type</h4>
-                        <p>Preenchimento automático de campos de texto com velocidade ajustável.</p>
-                    </div>
-                    <div class="feature-card resource-item status-card">
-                        <div class="icon-box warning">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
-                        </div>
-                        <div class="title-with-tag">
-                            <h4>AutoGabarito</h4>
-                            <span class="status-badge">Em Manutenção</span>
-                        </div>
-                        <p>Recurso temporariamente indisponível. Estamos aplicando melhorias de desempenho e estabilidade.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Seção Download -->
-            <section id="download-page" class="page-content login-card">
-                <header class="login-header">
-                    <h2>Download</h2>
-                </header>
-                <p class="section-desc">
-                    Obtenha a versão mais recente do aplicativo.
-                </p>
-                <div class="download-box">
-                    <div class="download-info">
-                        <h4>Vortex.exe</h4>
-                        <span class="file-meta">Versão para Windows</span>
-                    </div>
-                    <a id="download-btn" href="#" target="_blank" class="primary-download-btn">Baixar</a>
-                </div>
-            </section>
-        </main>
+        <section id="accounts-card" class="login-card accounts-card" aria-labelledby="accounts-title">
+            <div class="accounts-header"><h2 id="accounts-title">Contas conectadas</h2></div>
+            <div id="accounts-list" class="accounts-list"></div>
+            <button type="button" id="btn-open-modal" class="btn-add-account"><svg class="i " aria-hidden="true"><use href="#i-plus"/></svg>Adicionar conta</button>
+        </section>
     </div>
 
-    <script src="Version.js"></script>
-    <script src="script.js"></script>
+    <div id="add-modal" class="modal-overlay">
+        <div class="login-card modal-card" role="dialog" aria-modal="true" aria-labelledby="add-title">
+            <header class="modal-head"><h2 id="add-title">Nova conta</h2></header>
+            <form id="add-form">
+<div class="input-row">
+<div class="input-group ra-group"><label for="add-ra">RA</label><input class="field" type="text" id="add-ra" autocomplete="off" inputmode="numeric" maxlength="12" required data-focus></div>
+<div class="input-group digit-group"><label for="add-digito">Dígito</label><input class="field" type="text" id="add-digito" maxlength="2" autocomplete="off" inputmode="numeric" required></div>
+<div class="input-group uf-group"><label for="add-uf">UF</label><select class="field" id="add-uf" required></select></div>
+</div>
+<div class="input-group"><label for="add-senha">Senha</label><div class="password-wrapper"><input class="field" type="password" id="add-senha" autocomplete="off" required>
+<button type="button" id="add-toggle-password" class="eye-btn" title="Mostrar/ocultar senha" aria-label="Mostrar ou ocultar senha"><svg class="i " aria-hidden="true"><use href="#i-eye"/></svg></button></div></div>
+                <div class="modal-actions">
+                    <button type="button" id="btn-close-modal" class="btn-cancel">Cancelar</button>
+                    <button type="submit" id="btn-add-submit" class="btn-login">Salvar conta</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="settings-modal" class="modal-overlay">
+        <div class="login-card modal-card settings-card" role="dialog" aria-modal="true" aria-labelledby="settings-title">
+            <header class="modal-head row">
+                <h2 id="settings-title">Configurações</h2>
+                <button type="button" id="btn-close-settings" class="icon-btn" title="Fechar (Esc)" aria-label="Fechar"><svg class="i " aria-hidden="true"><use href="#i-x"/></svg></button>
+            </header>
+            <div class="settings-tabs" role="tablist">
+                <button type="button" class="tab-btn active" role="tab" aria-selected="true" data-tab="tab-config" data-focus><svg class="i " aria-hidden="true"><use href="#i-sliders"/></svg>Geral</button>
+                <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="tab-visual"><svg class="i " aria-hidden="true"><use href="#i-palette"/></svg>Aparência</button>
+                <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="tab-guide"><svg class="i " aria-hidden="true"><use href="#i-book"/></svg>Manual</button>
+                <button type="button" class="tab-btn" role="tab" aria-selected="false" data-tab="tab-news"><svg class="i " aria-hidden="true"><use href="#i-news"/></svg>Novidades</button>
+            </div>
+            <div class="settings-body">
+                <div id="tab-config" class="tab-pane active" role="tabpanel">
+                    <section class="settings-section"><h3>Privacidade</h3>
+                        <div class="setting-item"><div class="setting-info"><span class="setting-label">Ocultar RA nas contas</span><span class="setting-desc">Troca o RA real por “Conta 1”, “Conta 2”…</span></div><label class="toggle-switch"><input type="checkbox" id="toggle-hide-ra" aria-label="Ocultar RA nas contas"><span class="slider"></span></label></div>
+                    </section>
+                </div>
+                <div id="tab-visual" class="tab-pane" role="tabpanel">
+                    <section class="settings-section"><h3>Cores</h3>
+                        <div class="setting-item"><div class="setting-info"><span class="setting-label">Cor de destaque</span><span class="setting-desc">Foco, realces e seleção.</span></div><input type="color" id="custom-accent-color" class="color-input" value="#ffffff"></div>
+                        <div class="setting-item"><div class="setting-info"><span class="setting-label">Cor cinza principal</span><span class="setting-desc">Superfície dos cartões e janelas.</span></div><input type="color" id="custom-gray-color" class="color-input" value="#121212"></div>
+                        <div class="setting-item"><div class="setting-info"><span class="setting-label">Cor dos textos</span><span class="setting-desc">Texto principal e títulos.</span></div><input type="color" id="custom-text-color" class="color-input" value="#f0f0f0"></div>
+                        <div class="setting-item"><div class="setting-info"><span class="setting-label">Cor dos botões</span><span class="setting-desc">Fundo dos botões de ação.</span></div><input type="color" id="custom-btn-color" class="color-input" value="#1f1f1f"></div>
+                        <div class="setting-item"><div class="setting-info"><span class="setting-label">Cor das bordas</span><span class="setting-desc">Bordas de cartões e campos.</span></div><input type="color" id="custom-border-color" class="color-input" value="#333333"></div>
+                    </section>
+                    <section class="settings-section"><h3>Plano de fundo</h3>
+                        <div class="setting-item"><div class="setting-info"><span class="setting-label">Tipo de fundo</span><span class="setting-desc">Escolha como estilizar o fundo.</span></div><select id="bg-type-select" class="field theme-select"><option value="default">Padrão</option><option value="color">Cor sólida</option><option value="media">Imagem, GIF ou MP4</option></select></div>
+                        <div id="bg-solid-group" class="setting-item" hidden><div class="setting-info"><span class="setting-label">Cor de fundo</span><span class="setting-desc">Cor sólida aplicada ao fundo.</span></div><input type="color" id="custom-bg-color" class="color-input" value="#080808"></div>
+                        <div id="bg-media-group" class="setting-item stack" hidden>
+                            <div class="setting-info"><span class="setting-label">Arquivo de mídia</span><span class="setting-desc">Imagem, GIF ou vídeo MP4 (até 25 MB).</span></div>
+                            <div class="btn-row">
+                                <input type="file" id="bg-file-input" accept="image/png, image/jpeg, image/gif, video/mp4" hidden>
+                                <button type="button" id="btn-select-bg" class="vortex-embed-btn grow"><svg class="i " aria-hidden="true"><use href="#i-image"/></svg>Escolher arquivo</button>
+                                <button type="button" id="btn-remove-bg" class="vortex-embed-btn btn-danger" hidden>Remover</button>
+                            </div>
+                            <div id="bg-preview-box" class="bg-preview-box" hidden><span class="bg-preview-title">Pré-visualização</span><div id="bg-preview-media-wrapper" class="bg-preview-media-wrapper"></div></div>
+                        </div>
+                    </section>
+                    <button type="button" id="btn-reset-defaults" class="vortex-embed-btn btn-danger full">Restaurar padrões</button>
+                </div>
+                <div id="tab-guide" class="tab-pane" role="tabpanel">
+                    <section class="settings-section"><h3>Instruções de uso</h3><div class="accordion"><div class="accordion-item"><button class="accordion-header" type="button" aria-expanded="false"><span class="accordion-title"><svg class="i " aria-hidden="true"><use href="#i-log-in"/></svg>Como entrar</span><svg class="i accordion-icon" aria-hidden="true"><use href="#i-chevron"/></svg></button><div class="accordion-content"><div class="acc-inner"><p>Informe RA, dígito, UF e senha e clique em Entrar. Se a autenticação falhar, o Vortex avisa e volta para esta tela.</p></div></div></div><div class="accordion-item"><button class="accordion-header" type="button" aria-expanded="false"><span class="accordion-title"><svg class="i " aria-hidden="true"><use href="#i-users"/></svg>Contas conectadas</span><svg class="i accordion-icon" aria-hidden="true"><use href="#i-chevron"/></svg></button><div class="accordion-content"><div class="acc-inner"><p>Use “Adicionar conta” para salvar um perfil. Depois, basta clicar nele na lista para entrar sem digitar a senha. O X remove a conta e apaga a senha salva.</p></div></div></div><div class="accordion-item"><button class="accordion-header" type="button" aria-expanded="false"><span class="accordion-title"><svg class="i " aria-hidden="true"><use href="#i-shield"/></svg>Privacidade e segurança</span><svg class="i accordion-icon" aria-hidden="true"><use href="#i-chevron"/></svg></button><div class="accordion-content"><div class="acc-inner"><p>Os dados ficam apenas neste computador. Quando o Windows permite, a senha é criptografada com a sua conta de usuário. Ative “Ocultar RA” para exibir “Conta 1”, “Conta 2”… ao gravar a tela.</p></div></div></div><div class="accordion-item"><button class="accordion-header" type="button" aria-expanded="false"><span class="accordion-title"><svg class="i " aria-hidden="true"><use href="#i-palette"/></svg>Personalização</span><svg class="i accordion-icon" aria-hidden="true"><use href="#i-chevron"/></svg></button><div class="accordion-content"><div class="acc-inner"><p>Na aba Aparência, ajuste cores e fundo (imagem, GIF ou MP4 de até 25 MB). “Restaurar padrões” volta tudo ao original.</p></div></div></div><div class="accordion-item"><button class="accordion-header" type="button" aria-expanded="false"><span class="accordion-title"><svg class="i " aria-hidden="true"><use href="#i-help"/></svg>Solução de problemas</span><svg class="i accordion-icon" aria-hidden="true"><use href="#i-chevron"/></svg></button><div class="accordion-content"><div class="acc-inner"><p>Sessão expirada? Remova a conta e adicione novamente. Conexão instável? Aguarde: o login tenta por até 90 segundos. Notícias não carregam? Verifique a internet e use “Atualizar”.</p></div></div></div><div class="accordion-item"><button class="accordion-header" type="button" aria-expanded="false"><span class="accordion-title"><svg class="i " aria-hidden="true"><use href="#i-settings"/></svg>Atalhos</span><svg class="i accordion-icon" aria-hidden="true"><use href="#i-chevron"/></svg></button><div class="accordion-content"><div class="acc-inner"><p>Esc fecha janelas abertas. Tab navega pelos campos e Enter confirma.</p></div></div></div></div></section>
+                </div>
+                <div id="tab-news" class="tab-pane" role="tabpanel">
+                    <div class="news-head"><h3>Atualizações recentes</h3><button type="button" id="btn-refresh-news" class="vortex-embed-btn"><svg class="i " aria-hidden="true"><use href="#i-refresh"/></svg><span>Atualizar</span></button></div>
+                    <div id="news-status-msg" class="news-status-msg" hidden></div>
+                    <div id="news-container" class="news-container"><p class="loading-news">Carregando notícias...</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="loading-overlay" class="modal-overlay" role="alert" aria-live="assertive">
+        <div class="loading-card"><div class="spinner"></div><h2>Entrando...</h2><p>Aguarde um momento</p></div>
+    </div>
+
+    <div class="bottom-left-actions">
+        <button type="button" id="btn-settings" class="action-icon-btn" title="Configurações e ajuda" aria-label="Configurações e ajuda"><svg class="i " aria-hidden="true"><use href="#i-settings"/></svg></button>
+        <a href="https://discord.gg/FzuvaRmXmN" id="btn-discord" class="action-icon-btn discord-btn" title="Discord" aria-label="Discord"><svg class="i " aria-hidden="true"><use href="#i-discord"/></svg></a>
+    </div>
+
+    <div id="vortex-announcement-toast" class="announcement-toast" role="status">
+        <button type="button" id="btn-close-toast" class="toast-close-btn" title="Fechar" aria-label="Fechar"><svg class="i " aria-hidden="true"><use href="#i-x"/></svg></button>
+        <div id="toast-content" class="toast-content"></div>
+    </div>
+    <div id="toast-stack" class="toast-stack"></div>
+
+    <div class="decorative-gif-container" aria-hidden="true"><img src="Assets/white_replacement_full.gif" alt="" class="decorative-gif"></div>
+</main>
+</div>
+<script src="script.js"></script>
+<script src="login.js"></script>
 </body>
 </html>
