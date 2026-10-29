@@ -58,20 +58,6 @@ function animate() {
 }
 animate();
 
-const tabBtns = document.querySelectorAll('.tab-btn');
-const viewPanes = document.querySelectorAll('.view-pane');
-
-tabBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-        tabBtns.forEach(b => b.classList.remove('active'));
-        viewPanes.forEach(p => p.classList.remove('active'));
-
-        btn.classList.add('active');
-        const targetTab = btn.getAttribute('data-tab');
-        document.getElementById(targetTab).classList.add('active');
-    });
-});
-
 document.addEventListener('DOMContentLoaded', async () => {
     const downloadBtn = document.getElementById('download-btn');
     try {
